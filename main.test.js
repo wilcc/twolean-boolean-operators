@@ -12,7 +12,7 @@ const {
   isElementary,
   notAnElementarySchoolAdministrator,
   isMiddleSchoolTeacher,
-  areDifferentPeople,
+  differentPeople,
 } = require('./main')
 
 describe('moreThan5', () => {
@@ -130,9 +130,9 @@ describe('notAnElementarySchoolAdministrator', () => {
   })
 })
 
-describe('areDifferentPeople', () => {
+describe('differentPeople', () => {
   it('returns whether two names are identical or not', () => {
-    expect(areDifferentPeople('colin', 'messi')).toBe(true)
-    expect(areDifferentPeople('colin', 'colin')).toBe(false)
+    expect(differentPeople('colin', 'messi')).toBe(true)
+    expect(differentPeople('colin', 'colin')).toBe(false)
   })
 })
